@@ -8,14 +8,15 @@ import './App.css';
 function App() {
 
 
-const actualYear = new Date().getFullYear();
+// const actualYear = new Date().getFullYear();
 
 const TEXTS = {
 
   HEADER : "Rafal's Blog",
-  SECTION_1 : "Lorem ipsum dolor sit amet,   elit. Suspendisse fringilla fringilla neque ac laoreet. Fusce vel nulla ornare, aliquam ex eget, sollicitudin neque. Morbi venenatis rutrum ligula vel scelerisque.",
+  SECTION_1 : "Lorem ipsum dolor sit amet, elit. Suspendisse fringilla fringilla neque ac laoreet. Fusce vel nulla ornare, aliquam ex eget, sollicitudin neque. Morbi venenatis rutrum ligula vel scelerisque.",
   SECTION_2 : "Lorem ipsum dolor", 
-  FOOTER : `Ⓒ Copyrights - ${actualYear}`,
+  // FOOTER : `Ⓒ Copyrights - ${actualYear}`,
+  FOOTER : `Ⓒ Copyrights - `,
 };
   return (
 

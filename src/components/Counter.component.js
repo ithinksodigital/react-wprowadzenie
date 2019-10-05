@@ -5,14 +5,11 @@ class Counter extends Component {
     state = {count: 0,};
 
 
-    incrementCounter = () => ( this.setState(prevState => ({
-        count: !prevState.count,
-        count: this.state.count +1
-    }))
-);
-
+    incCount = () => this.setState(prevState => ({count: prevState.count + 1,}));
     // incrementCounter = () => this.setState({count: this.state.count +1});
-    discrementCounter = () => this.setState({count: this.state.count -1});
+    // discrementCounter = () => this.setState({count: this.state.count -1});
+    disCount = () => this.setState(prevState => ({count: prevState.count - 1,}));
+
     resetCounter = () => this.setState({count: this.state.count = 0})
 
     render() {
@@ -22,8 +19,8 @@ class Counter extends Component {
             <div className="button" className="Count-content">
             <div><p>Stan: {count}</p></div>
             <div>            
-            <button className="button" onClick={this.incrementCounter}>+</button>
-            <button className="button" onClick={this.discrementCounter}>-</button>
+            <button className="button" onClick={this.incCount}>+</button>
+            <button className="button" onClick={this.disCount}>-</button>
             <button className="button"  onClick={this.resetCounter}>reset</button>
             </div>
             </div>
